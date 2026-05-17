@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 load_dotenv()
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
 from groq import Groq
 import os
@@ -456,7 +455,7 @@ Sois concis mais complet. Propose des insights actionnables quand c'est pertinen
 """
 
 def call_groq(messages, data_context):
-    api_key = os.environ.get("GROQ_API_KEY", "")
+    api_key = os.environ.get("GROQ_API_KEY", "")  or st.secrets.get("GROQ_API_KEY", "")
     if not api_key:
         return "⚠️ Clé API Groq manquante. Définis la variable d'environnement `GROQ_API_KEY`."
     if not messages:
