@@ -213,7 +213,7 @@ with tab1:
         st.plotly_chart(fig, use_container_width=True)
 
     if show_annotations and len(dff) > 0:
-        st.markdown('<div class="section-title">💡 Insights automatiques</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-title">💡 Insights pertinents</div>', unsafe_allow_html=True)
         top_niveau = dff["niveau_etablissement"].value_counts().idxmax()
         top_type   = dff["type_etablissement"].value_counts().idxmax()
         pct_prive  = (dff["type_etablissement"] == "privé").mean() * 100
