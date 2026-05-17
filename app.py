@@ -417,7 +417,7 @@ st.markdown("---")
 st.markdown("""
 <div class="dashboard-header" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); margin-top:10px;">
     <h1>🤖 Assistant IA — Analyste Éducation</h1>
-    <p>Posez vos questions · Groq (LLaMA 3.3 70B) analyse le jeu de données filtré en temps réel</p>
+    <p>Posez vos questions · Groq analyse le jeu de données filtré en temps réel</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -547,6 +547,6 @@ if (send and user_input.strip()) or (st.session_state.messages and st.session_st
 # ─── Footer ───────────────────────────────────────────────────────────────────
 st.markdown(f"""
 <div style="text-align:center; color:#94a3b8; font-size:0.78rem; padding:20px 0 10px 0;">
-    🎓 Tableau de Bord Éducation · {len(df)} établissements · Propulsé par Groq AI (LLaMA 3.3 70B)
+    🎓 Tableau de Bord Éducation · {len(df)} établissements · Propulsé par Groq AI
 </div>
 """, unsafe_allow_html=True)
