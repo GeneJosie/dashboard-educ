@@ -122,7 +122,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("### 📁 Dataset")
-    st.info(f"**{len(df)}** établissements · **5** variables\n\n Aucune valeur manquante\n Sans doublons")
+    st.info(f"**{len(df)}** établissements · **5** variables\n")
 
     if st.button("🔄 Réinitialiser les filtres", use_container_width=True):
         st.rerun()
